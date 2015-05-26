@@ -73,15 +73,36 @@ var HTMLlocation = ;
 var HTMLbioPic = ;
 var HTMLwelcomeMsg = ;
 
-var HTMLskillsStart = ;
-var HTMLskills = ;
+var HTMLspacer = '<div class="spacer"></div>';
 
-var HTMLworkStart = ;
-var HTMLworkEmployer = ;
-var HTMLworkTitle = ;
-var HTMLworkDates = ;
-var HTMLworkLocation = ;
-var HTMLworkDescription = ;
+// Personal Profile Header, append to <section class="page-profile"></section>
+var HTMLprofileStart = '<div class="profile container"></div>';
+var HTMLprofileHeader = '<header class="section-header><h2 class="section-title"><span>Personal Profile</span></h2>';
+var HTMLprofileSubtitle = '<p class="section-subtitle">%data%</p></header>';
+var HTMLprofileRow = '<div class="row"></row>';
+// Append below into profileRow
+var HTMLprofilePic = '<div class="col-md-3><div class="profile"><img src="%data%"" id=""></div></div>';
+var HTMLprofileInfo = '<div class="col-md-9"><p>%data%</p></div>'
+
+// Append to <section class="page-skills"></section>
+var HTMLskillsStart = '<div class="skills container"></div>';
+var HTMLskillsHeader = '<header class="section-header><h2 class="section-title"><span>Skills</span></h2>';
+var HTMLskillsSubtitle = '<p class="section-subtitle">%data%</p></header>';
+// Append skillsItemStart to "skills container", sibling to <header>
+var HTMLskillsItemStart = '<div class="row"></div>';
+var HTMLskillsItem = '<div class="col-md-2><p>%data%</p></div>';
+
+
+// Append to <section class="page-experience"></section>
+var HTMLworkStart = '<div class="work container"></div>';
+var HTMLworkHeader = '<header class="section-title"><h2 class="section-title"><span>Experience</span></h2>';
+var HTMLworkSubtitle = '<p class="section-subtitle">%data%</p></header>';
+// Append to <article class="experience"></article> 
+var HTMLworkEmployer = '<div class="row"><div class="col-md-4"><article class="experience"><header><h3>%data%</h3>';
+var HTMLworkTitle = '<p>%data% ';
+var HTMLworkLocation = ', %data%';
+var HTMLworkDates = ', %data</p></header>';
+var HTMLworkDescription = '<p>%data%</p></article></div></div>';
 
 var HTMLprojectStart = ;
 var HTMLprojectTitle = ;
@@ -89,18 +110,25 @@ var HTMLprojectDates = ;
 var HTMLprojectDescription = ;
 var HTMLprojectImage = ;
 
-var HTMLschoolStart = ;
-var HTMLschoolName = ;
-var HTMLschoolDegree = ;
-var HTMLschoolDates = ;
-var HTMLschoolLocation = ;
-var HTMLschoolMajor = ;
-
-var HTMLonlineClasses = ;
-var HTMLonlineTitle = ;
-var HTMLonlineSchool = ;
-var HTMLonlineDates = ;
-var HTMLonlineURL = ;
+// Education Section Header 
+var HTMLschoolStart = '<div class="education container"></div>';
+var HTMLschoolHeader = '<header class="section-header"><h2 class="section-title><span>Education</span></h2>';
+var HTMLschoolSubtitle = '<p class="section-subtitle">%data%</p></header>';
+var HTMLschoolListStart = '<div class="row"></div>';
+// Individual School Rows
+var HTMLschoolName = '<div class="col-md-6"><article class="education"><header><h3>%data%</h3>';
+var HTMLschoolDegree = '<p>%data%, ';
+var HTMLschoolDates = ' %data%,';
+var HTMLschoolLocation = ' %data,';
+var HTMLschoolMajor = ' %data%</p></header>';
+var HTMLschoolDescription = '<p>%data%</p></article></div>';
+// Online School?
+var HTMLonlineClasses = '<div class="col-md-6><article class="education"><header><h3>%data%</h3>';
+var HTMLonlineTitle = '<p>%data%, ';
+var HTMLonlineSchool = '%data%, ';
+var HTMLonlineDates = ' %data%, ';
+var HTMLonlineURL = '<a href="#">%data%</a></p></header>';
+var HTMLonlineDescription = '<p>%data%</p></article></div>'
 
 var internationalizeButton = ;
 var googleMap = ;
