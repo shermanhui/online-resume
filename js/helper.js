@@ -6,10 +6,25 @@ var HTMLprofilePic = '<div class="col-md-3"><div class="profile"><img class="img
 var HTMLprofilePara = '<div class="col-md-9 profile-para"></div>';
 var HTMLprofileInfo = '<p>%data%</p>';
 
+// Education Section 
+var HTMLschoolHeader = '<header class="section-header education-header-info text-center"><header class="section-header"><h2 class="section-title"><span>Education</span></h2><div class="spacer"></div><p class="section-subtitle">Where I\'ve learned</p></header></header>';
+var HTMLschoolName = '<div class="col-md-12"><article class="education education-item text-center"><header><h3>%data%</h3>';
+var HTMLschoolDegree = '<p>%data%, ';
+var HTMLschoolMajor = ' %data%,';
+var HTMLschoolDates = ' %data%,';
+var HTMLschoolLocation = ' %data%</p></header>';
+var HTMLschoolDescription = '<p>%data%</p></article></div>';
+
+var HTMLonlineStart = '<div class="row online-education-row"></div>';
+var HTMLonlineHeader = '<header class="section-header education-header-info text-center"><header class="section-header"><h2 class="section-title online-title"><span>Online Ed</span></h2><div class="spacer"></div><p class="section-subtitle">In the pursuit of knowledge</p></header></header>';
+var HTMLonlineTitle ='<div class="col-md-4"><article class="online-ed"><header><h3>%data%</h3>';
+var HTMLonlineSchool = '<p>%data%, ';
+var HTMLonlineDates = '%data%, ';
+var HTMLonlineURL = ' <a href=%data%>Certification</a></p></article></div>';
+
 // Skills Section
 var HTMLskillsHeader = '<header class="section-header skills-header-info text-center"><header class="section-header"><h2 class="section-title"><span>Skills</span></h2><div class="spacer"></div><p class="section-subtitle">Technical proficiencies</p></header></header>';
-var HTMLskillsItem = '<div class="col-md-2"><div class="chart" data-percent="50" data-scale-color="#ffb400"><p>%data%</p></div></div>';
-
+var HTMLskillsItem = '<div class="col-md-2 text-center"><div class="chart" data-percent="50" data-scale-color="#ffb400"><p>%data%</p></div></div>';
 
 // Work Section
 var HTMLworkHeader = '<header class="section-header work-header-info text-center"><header class="section-header"><h2 class="section-title"><span>Experience</span></h2><div class="spacer"></div><p class="section-subtitle">Where I\'ve worked</p></header></header>';
@@ -19,29 +34,15 @@ var HTMLworkLocation = '%data%';
 var HTMLworkDates = ', %data%</p></header>';
 var HTMLworkDescription = '<p>%data%</p></article></div>';
 
-// var HTMLprojectStart = ;
-// var HTMLprojectTitle = ;
-// var HTMLprojectDates = ;
-// var HTMLprojectDescription = ;
-// var HTMLprojectImage = ;
-
-// Education Section 
-var HTMLschoolHeader = '<header class="section-header education-header-info text-center"><header class="section-header"><h2 class="section-title"><span>Education</span></h2><div class="spacer"></div><p class="section-subtitle">Where I\'ve learned</p></header></header>';
-var HTMLschoolName = '<div class="col-md-6"><article class="education education-item"><header><h3>%data%</h3>';
-var HTMLschoolDegree = '<p>%data%, ';
-var HTMLschoolMajor = ' %data%,';
-var HTMLschoolDates = ' %data%,';
-var HTMLschoolLocation = ' %data%</p></header>';
-var HTMLschoolDescription = '<p>%data%</p></article></div>';
-
-// var HTMLonlineStart = '<div class="row online-education-row"></div>';
-// var HTMLschoolHeader = '<header class="section-header education-header-info text-center"><header class="section-title"><h2 class="section-title"><span>Online</span></h2><div class="spacer"></div><p class="section-subtitle">A little bit about my education</p></header></header>';
-// var HTMLonlineTitle ='<div class="col-md-4><article class="online-ed"><header><h3>%data%</h3>';
-// var HTMLonlineSchool = '<p>%data%, ';
-// var HTMLonlineDates = '%data%, ';
-// var HTMLonlineURL = ' %data</p></article></div>';
+// Projects Section 
+var HTMLprojectHeader = '<header class="section-header work-header-info text-center"><header class="section-header"><h2 class="section-title"><span>Portfolio</span></h2><div class="spacer"></div><p class="section-subtitle">Compilation of projects</p></header></header>';
+var HTMLprojectTitle = '<div class="col-md-4 text-center"><article class="projects project-item"><header><h3>%data%</h3>';
+var HTMLprojectDates = '<p>%data%';
+var HTMLprojectDescription = ', %data%</p>';
+var HTMLprojectImage = '<img class="img-responsive center-block" src="%data%"></article></div>';
 
 // GOOGLE MAPS VAR //
+var HTMLmapHeader = '<header class="section-header text-center"><h2 class="section-title"><span>Where I\'ve Lived and Worked</span><div class="spacer map-spacer"></div></h2></header>'
 var googleMap = '<div id="map"></div>';
 var infoWindow = new google.maps.InfoWindow();
 

@@ -64,36 +64,36 @@ var education = {
 			"major" : "Economics",
 			"dates" : "2009 - 2014",
 			"description" : "As a student at UBC some of his best learning experiences came from his active involvment many extracurricular activities. He was the 2013 Community Deparment head of the largest social club on campus, the Chinese Varsity Club. Spear heading community initiatives such as blood drives, community driven campus-wide games, and other small scale volunteer events, taught him how to delegate and plan large events. Sherman was also CVC's executive of the year in 2014. He was also involved as an amabassador to first-year UBC students as a Orientations Leader, responsible for being their first point of contact on campus and working with a selected professor to organize their first lecture."
+		}//,
+		// {
+		// 	"name" : "Udacity",
+		// 	"location" : "",
+		// 	"degree" : "Frontend Developer Nanodegree",
+		// 	"major" : "Web Development",
+		// 	"dates" : "May 2015",
+		// 	"description" : "Udacity was the perfect blend of flexible learning that accomodated full-time work and minimized any financial risks. For a driven self-learner, Sherman enjoys the self-paced aspects of Udacity, as he can speed up the materials he is familiar with but dive deeper into unfamiliar content for a better understanding. The Nanodegree introduced a variety of skills such as Object Orientated Programming and the ability to research documentation for solutions. Sherman completed four large projects during the Nanodegree. The projects include an online portfolio, this responsive resume, a replica arcade game as well as a feed reader."
+		// }
+	], //CODE BELOW FOR REFERENCE FOR ONLINE CLASSES
+	"onlineCourses" : [
+		{
+			"title" : "Introduction to Python (Part I)",
+			"school" : "Rice University",
+			"dates" : "April 2015 ",
+			"url" : "https://www.coursera.org/account/accomplishments/verify/762MAG5HLH"
 		},
 		{
-			"name" : "Udacity",
-			"location" : "",
-			"degree" : "Frontend Developer Nanodegree",
-			"major" : "Web Development",
+			"title" : "Introduction to Python (Part II)",
+			"school" : "Rice University",
 			"dates" : "May 2015",
-			"description" : "Udacity was the perfect blend of flexible learning that accomodated full-time work and minimized any financial risks. For a driven self-learner, Sherman enjoys the self-paced aspects of Udacity, as he can speed up the materials he is familiar with but dive deeper into unfamiliar content for a better understanding. The Nanodegree introduced a variety of skills such as Object Orientated Programming and the ability to research documentation for solutions. Sherman completed four large projects during the Nanodegree. The projects include an online portfolio, this responsive resume, a replica arcade game as well as a feed reader."
+			"url" : "https://www.coursera.org/account/accomplishments/verify/XXR7CGJCSC"	
+		},
+		{
+			"title" : "Front End Developer Nanodegree",
+			"school" : "Udacity",
+			"dates" : "May 2015",
+			"url" : "#"
 		}
-	]//, CODE BELOW FOR REFERENCE FOR ONLINE CLASSES
-	// "onlineCourses" : [
-	// 	{
-	// 		"title" : "Introduction to Python (Part I)",
-	// 		"school" : "Rice University",
-	// 		"dates" : "April 2015 ",
-	// 		"url" : "string"
-	// 	},
-	// 	{
-	// 		"title" : "Introduction to Python (Part II)",
-	// 		"school" : "Rice University",
-	// 		"dates" : "May 2015",
-	// 		"url" : "string"	
-	// 	},
-	// 	{
-	// 		"title" : "Front End Developer Nanodegree",
-	// 		"school" : "Udacity",
-	// 		"dates" : "May 2015",
-	// 		"url" : "string"
-	// 	}
-	// ]
+	 ]
 }
 
 var work = {
@@ -130,8 +130,28 @@ var projects = {
 			"description" : "Built an online portfolio to display past projects",
 			"images" : [
 				{
-					"image 1" : "http://loremflickr.com/g/320/240/paris",
-					"image 2" : "http://loremflickr.com/g/320/240/boston"
+					"image 1" : "https://placeimg.com/555/333/tech"//,
+					//"image 2" : "http://loremflickr.com/g/320/240/boston"
+				}
+			]
+		},
+		{
+			"title" : "Filler Project",
+			"dates" : "May 2015",
+			"description" : "Built an online portfolio to display past projects",
+			"images" : [
+				{
+					"image 1" : "https://placeimg.com/555/333/tech"
+				}
+			]
+		},
+		{
+			"title" : "Filler Website",
+			"dates" : "May 2015",
+			"description" : "Built an online portfolio to display past projects",
+			"images" : [
+				{
+					"image 1" : "https://placeimg.com/555/333/tech"
 				}
 			]
 		}
@@ -176,16 +196,17 @@ education.display = function() {
 		$(".education-item:last").append(formattedDescription);
 	}
 // COMBINED ONLINE EDU W/ EDU CODE BELOW IS FOR REFERENCE // 
-	// $(".education-container").append(HTMLonlineStart);
-	// for (onlineCourse in education.OnlineCourses) {
-	// 	var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
-	// 	var formattedSchool = HTMLonlineSchool.replace("%data$", education.onlineCourses[onlineCourse].school);
-	// 	var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].dates);
-	// 	var formattedURL = HTMLonlineURL.replace("%data", education.onlineCourses[onlineCourse].url);
+	$(".education-container").append(HTMLonlineStart);
+	$(".online-education-row").append(HTMLonlineHeader)
+	for (onlineCourse in education.onlineCourses) {
+		var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
+		var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineCourse].school);
+		var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].dates);
+		var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[onlineCourse].url);
 
-	// 	var formattedOnlineEdu = (formattedTitle + formattedSchool + formattedOnlineDates + formattedURL);
-	// 	$(".online-ed:last").append(formattedOnlineEdu);
-	// }
+		var formattedOnlineEdu = (formattedTitle + formattedSchool + formattedOnlineDates + formattedURL);
+		$(".online-education-row").append(formattedOnlineEdu);
+	}
 }
 
 education.display();
@@ -211,6 +232,31 @@ bio.display = function(){
 
 bio.display();
 
+// // PROJECTS //
+projects.display = function() {
+	$('.portfolio-container').prepend(HTMLprojectHeader);
+	for (project in projects.projects) {
+		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+		var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);	
+		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+		var formattedProjectInfo = (formattedTitle + formattedDates + formattedDescription)
+		$(".portfolio-row:last").append(formattedProjectInfo);
+
+		if (projects.projects[project].images.length > 0) {
+			for (image_object in projects.projects[project].images){
+				for (indy_images in projects.projects[project].images[image_object]){
+					var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image_object][indy_images]);
+					$(".project-item:last").append(formattedImage);
+				}
+			}
+		}
+	}
+}
+projects.display();
+
+
+
+$('#mapDiv').prepend(HTMLmapHeader);
 $("#mapDiv").append(googleMap);
 
 
@@ -234,34 +280,6 @@ $("#mapDiv").append(googleMap);
 // 		$("#skills").append(formattedSkill);
 // 	}
 // }
-
-// DISPLAY FUNCTIONS //
-
-
-// // PROJECTS //
-// projects.display = function() {
-// 	for (project in projects.projects) {
-// 		$("#projects").append(HTMLprojectStart);
-
-// 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-// 		$(".project-entry:last").append(formattedTitle);
-// 		var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-// 		$(".project-entry:last").append(formattedDates);	
-// 		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-// 		$(".project-entry:last").append(formattedDescription);
-
-// 		if (projects.projects[project].images.length > 0) {
-// 			for (image_object in projects.projects[project].images){
-// 				for (indy_images in projects.projects[project].images[image_object]){
-// 					var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image_object][indy_images]);
-// 					$(".project-entry:last").append(formattedImage);
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// projects.display();
 
 // END DISPLAYS //
 
