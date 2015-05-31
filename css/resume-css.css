@@ -1,4 +1,18 @@
 /* Common CSS */
+.chart {
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.chart p {
+	font-size: 1.2em;
+}
+
 .project-title {
 	margin-top: 0px;
 }
@@ -10,6 +24,10 @@
 
 .error-page.error-page {
 	background-image: url('http://placecage.com/gif/1124/700');
+}
+
+.page-education, .page-experience {
+	background-color: #f5f5f5;
 }
 
 .full-buffer {
@@ -34,6 +52,28 @@
 	margin: 0;
 }
 
+.spacer {
+	background-color: #3498db;
+	width: 100px;
+	height: 2px;
+	margin: auto;
+}
+
+.section-title {
+	font-size: 3em;
+}
+
+.section-subtitle {
+	font-size: 1.5em;
+	color: #757575;
+}
+.map-spacer {
+	margin-top: 0.5%;
+}
+
+.section-subtitle {
+	margin-top: 20px;
+}
 .vertical-center {
 	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
 	min-height: 100vh; /* These two lines are counted as one :-)       */
@@ -71,12 +111,13 @@ html,body {
 
 
 /* FOOTER CSS */
-
+/* TO DO ADD MORE FOOTER SPACE IN MARGIN TOP FOR RESUME PAGE */
 .footer {
 	/*position: absolute;*/
 	margin-top: 30px;
 	bottom: 0;
 	width: 100%;
+	position: relative;
 	/* Set the fixed height of the footer here */
 	/*height: 60px;*/
 	background-color: #f5f5f5;
@@ -117,14 +158,16 @@ html,body {
 
 /* Map Properties */
 #map {
-  display: block;
-  height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
+	display: block;
+	position: relative;
+	height: 100%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 #mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
+	position: relative;
+	height: 400px;
+	width: 100%;
+	padding-bottom: 7%;
 }
