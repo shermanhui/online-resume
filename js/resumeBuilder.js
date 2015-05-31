@@ -42,7 +42,7 @@ var bio = {
 	"role" : "Web Developer",
 	"location" : "Vancouver",
 	"descriptions" : [
-		"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo.", "Eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo.", "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo.", "Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo."],
+		"Sherman Hui graduated with a Bachelor of Arts in Economics and a minor in Commerce at the University of British Columbia. Currently, he is working in the retail banking industry at TD Canada Trust. Although he has a formal degree under the belt, he felt that he wasn't truly satisfied with his education and had yet to find a career that inspires true passion.  ", "As of April 2015 he has been actively involved in Massively Open Online Courses (MOOCs) to broaden his skill sets and explore various fields to find his true passion. Currently, he is completing his Front End Nanodegree at Udacity and aims to complete the Full Stack Nanodegree track afterwards.", "Ultimately, Sherman hopes to attain a full-time entry level position as a Front End Developer and move on to a Full Stack position in the exciting and ever dynamic field of web development."],
 	"skills" : [
 	"HTML", "CSS", "JavaScript", "jQuery", "Python", "WordPress"
 	],
@@ -63,7 +63,7 @@ var education = {
 			"degree" : "Bachelor of Arts",
 			"major" : "Economics",
 			"dates" : "2009 - 2014",
-			"description" : "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+			"description" : "As a student at UBC some of his best learning experiences came from his active involvment many extracurricular activities. He was the 2013 Community Deparment head of the largest social club on campus, the Chinese Varsity Club. Spear heading community initiatives such as blood drives, community driven campus-wide games, and other small scale volunteer events, taught him how to delegate and plan large events. Sherman was also CVC's executive of the year in 2014. He was also involved as an amabassador to first-year UBC students as a Orientations Leader, responsible for being their first point of contact on campus and working with a selected professor to organize their first lecture."
 		},
 		{
 			"name" : "Udacity",
@@ -71,7 +71,7 @@ var education = {
 			"degree" : "Frontend Developer Nanodegree",
 			"major" : "Web Development",
 			"dates" : "May 2015",
-			"description" : "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+			"description" : "Udacity was the perfect blend of flexible learning that accomodated full-time work and minimized any financial risks. For a driven self-learner, Sherman enjoys the self-paced aspects of Udacity, as he can speed up the materials he is familiar with but dive deeper into unfamiliar content for a better understanding. The Nanodegree introduced a variety of skills such as Object Orientated Programming and the ability to research documentation for solutions. Sherman completed four large projects during the Nanodegree. The projects include an online portfolio, this responsive resume, a replica arcade game as well as a feed reader."
 		}
 	]//, CODE BELOW FOR REFERENCE FOR ONLINE CLASSES
 	// "onlineCourses" : [
@@ -103,21 +103,21 @@ var work = {
 			"title" : "Customer Service Representative",
 			"location" : "8100 No.2 Road Unit 145, Richmond, BC",
 			"dates" : "September 2014 to present",
-			"description" : "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+			"description" : "As the first point of contact for clients at one of Canada's five big banks, my responsibilities included delivering legendary service and personalized advice for clients."
 		},
 		{
-			"employer" : "University of British Columbia - Faculty of Arts",
+			"employer" : "University of British Columbia",
 			"title" : "Communications Assistant",
 			"location" : "Buchanan Bldg, The University of British Columbia Vancouver, BC V6T 1Z1",
 			"dates" : "April 2013 to September 2014",
-			"description" : "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+			"description" : "As a communications assistant, Sherman was responsible for managing and creating content for the Faculty of Arts websites. Eventually, he took the initiative to learn basic HTML and CSS skills to help the Communications team's web developers with minor web design tasks. The result of Sherman's proactivity contributed to an excellent reception among faculty clients and even resulting in winning a W3 award for the Faculty of Art's websites."
 		},
 		{
 			"employer" : "Centre for Teaching, Learning and Technology",
 			"title" : "Marketing and Communications Assistant",
 			"location" : "214 - 1961 East Mall, Irving K. Barber Learning Centre, Vancouver, BC V6T 1Z1",
 			"dates" : "Jan 2013 to April 2013",
-			"description" : "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+			"description" : "The Marketing and Communications Assistant position revolved around creating and editing marketing material for the CTLT. Sherman helped create and edit a email newsletter made in Adobe Illustrator, that is regularly sent out to UBC's faculty. He was also responsible for maintaining and managing the CTLT's online blog."
 		}
 	]
 }

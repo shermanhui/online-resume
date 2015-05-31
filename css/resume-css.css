@@ -71,6 +71,10 @@
 	margin-top: 0.5%;
 }
 
+.row {
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
 .section-subtitle {
 	margin-top: 20px;
 }
