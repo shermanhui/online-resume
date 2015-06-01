@@ -1,7 +1,6 @@
 // HOVER JS //
 $(document).ready(function() {
     $("[rel='tooltip']").tooltip();    
- 
     $('.thumbnail').hover(
         function(){
             $(this).find('.caption').fadeIn(250); //slideDown(250)
@@ -9,33 +8,8 @@ $(document).ready(function() {
         function(){
             $(this).find('.caption').fadeOut(250); //.slideDown(205)
         }
-    );
-
-    $(".disabled-link").hover(
-    	function() {
-    		$(this).find('.error').preventDefault();
-    	}
     ); 
 });
-
-// BIO, EDU, WORK, PROJECT JSONS //
-// var bio = { //Object Literal Notation//
-// 	"name" : "Sherman Hui",
-// 	"role" : "Web Developer",
-// 	"age" : 24,
-// 	"contacts" : {
-// 		"mobile" : "",
-// 		"email" : "sherman.sy.hui@gmail.com",
-// 		"github" : "github.com/shui91",
-// 		"location" : "Vancouver"
-// 	},
-// 	"welcomeMessage" : "lorem ipsum dolor sit amet etc",
-// 	"skills" : [
-// 	"HTML", "CSS", "Javascript", "JQuery", "Python"
-// 	],
-// 	"picture" : "http://loremflickr.com/g/320/240/paris",
-// 	"display" : "to be filled"
-// }
 
 var bio = {
 	"name" : "Sherman Hui",
@@ -73,7 +47,7 @@ var education = {
 		// 	"dates" : "May 2015",
 		// 	"description" : "Udacity was the perfect blend of flexible learning that accomodated full-time work and minimized any financial risks. For a driven self-learner, Sherman enjoys the self-paced aspects of Udacity, as he can speed up the materials he is familiar with but dive deeper into unfamiliar content for a better understanding. The Nanodegree introduced a variety of skills such as Object Orientated Programming and the ability to research documentation for solutions. Sherman completed four large projects during the Nanodegree. The projects include an online portfolio, this responsive resume, a replica arcade game as well as a feed reader."
 		// }
-	], //CODE BELOW FOR REFERENCE FOR ONLINE CLASSES
+	], 
 	"onlineCourses" : [
 		{
 			"title" : "Introduction to Python (Part I)",
@@ -194,8 +168,7 @@ education.display = function() {
 
 		var formattedDescription = HTMLschoolDescription.replace("%data%", education.schools[school].description);
 		$(".education-item:last").append(formattedDescription);
-	}
-// COMBINED ONLINE EDU W/ EDU CODE BELOW IS FOR REFERENCE // 
+	} 
 	$(".education-container").append(HTMLonlineStart);
 	$(".online-education-row").append(HTMLonlineHeader)
 	for (onlineCourse in education.onlineCourses) {
@@ -211,7 +184,7 @@ education.display = function() {
 
 education.display();
 
-bio.display = function(){
+bio.display = function() {
 	$('.skills-container').prepend(HTMLskillsHeader);
 	$('.profile-container').prepend(HTMLprofileHeader);
 
@@ -246,15 +219,14 @@ projects.display = function() {
 			for (image_object in projects.projects[project].images){
 				for (indy_images in projects.projects[project].images[image_object]){
 					var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image_object][indy_images]);
-					$(".project-item:last").append(formattedImage);
+					$(".thumbnail:last").append(formattedImage);
 				}
 			}
 		}
 	}
 }
+
 projects.display();
-
-
 
 $('#mapDiv').prepend(HTMLmapHeader);
 $("#mapDiv").append(googleMap);
@@ -262,6 +234,25 @@ $("#mapDiv").append(googleMap);
 
 
 // NAME, ROLE, PIC & WELCOME MESSAGE //
+
+// BIO, EDU, WORK, PROJECT JSONS //
+// var bio = { //Object Literal Notation//
+// 	"name" : "Sherman Hui",
+// 	"role" : "Web Developer",
+// 	"age" : 24,
+// 	"contacts" : {
+// 		"mobile" : "",
+// 		"email" : "sherman.sy.hui@gmail.com",
+// 		"github" : "github.com/shui91",
+// 		"location" : "Vancouver"
+// 	},
+// 	"welcomeMessage" : "lorem ipsum dolor sit amet etc",
+// 	"skills" : [
+// 	"HTML", "CSS", "Javascript", "JQuery", "Python"
+// 	],
+// 	"picture" : "http://loremflickr.com/g/320/240/paris",
+// 	"display" : "to be filled"
+// }
 
 // var formattedName = HTMLheaderName.replace("%data%", bio.name);
 // var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
